@@ -17,9 +17,9 @@
     ansible.builtin.pip:
      name: "{{ item }}"
      executable: pip3.9
-     loop:
-     - PyMySQL
-     - cryptography
+    loop:
+    - PyMySQL
+    - cryptography
 
    - name: connect to mysql
      community.mysql.mysql_info:
