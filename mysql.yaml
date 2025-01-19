@@ -13,10 +13,10 @@
      state: started
      enabled: yes
 
-- name: install dependencies
-     ansible.builtin.pip:
-      name: "{{ item }}"
-      executable: pip3.9
+  - name: install dependencies
+    ansible.builtin.pip:
+     name: "{{ item }}"
+     executable: pip3.9
      loop:
      - PyMySQL
      - cryptography
